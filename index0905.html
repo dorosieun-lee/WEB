@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test page</title>
+    <style>
+        body {
+            height: 1200px;
+        }
+        header {
+            position: fixed;
+            top:0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+        }
+        .item {
+            width: 120px;
+            height: 30px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        h2 {
+            font-size: 36px;
+        }
+        .circle {
+            position: absolute;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="item">메뉴 1</div>
+            <div class="item">메뉴 2</div>
+            <div class="item">메뉴 3</div>
+        </div> 
+        <h1>Logo</h1>
+        <div class="container">
+            <div class="item">회원가입</div>
+            <div class="item">로그인</div>
+        </div>
+    </header>
+    <div class="circle">
+    </div>
+</body>
+</html>

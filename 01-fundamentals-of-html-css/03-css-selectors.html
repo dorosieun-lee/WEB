@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*전체 선택자 */
+    * {
+      color: red;
+    }
+    /*요소 선택자: 문제점 - 재사용을 할 수 없다. */
+    h2 {
+      color: orange;
+    }
+    h3, h4 {
+      color: green
+    }
+    /*클래스 선택자: 아래 태그에 class="blue"라고 쓴 글 스타일이 바뀜*/
+    .blue {
+      color: blue;
+    }
+    /*아이디 선택자: 문서에는 주어진 아이디를 가진 요소가 하나만 있어야 함 -> 잘 안씀*/
+    #purple {
+      color: purple;
+    }
+    /*클래스 선택자*/
+    .green {
+      color: green;
+    }
+    /*자식 결합자*/
+    .green > span {
+      font-size: 50px;
+    }
+    /*자손 결합자*/
+    .green li {
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="blue">Heading</h1>
+  <h2>선택자</h2>
+  <h3>연습</h3>
+  <h4>반가워요</h4>
+  <p id="purple">과목 목록</p>
+  <ul class="green">
+    <li>파이썬</li>
+    <li>알고리즘</li>
+    <li>웹
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PYTHON</li>
+      </ol>
+    </li>
+  </ul>
+  <p class="green">Lorem, <span>ipsum</span> dolor.</p>
+</body>
+
+</html>
